@@ -16,6 +16,21 @@ $(call inherit-product, device/google/zuma/evolution_common.mk)
 include device/google/akita/akita/device-lineage.mk
 include device/google/akita/akita/device-evolution.mk
 
+#Evolution Xtras
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_IS_PIXEL_8 := true
+TARGET_IS_PIXEL := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#Evolution build type
+EVO_BUILD_TYPE := Official
+
+#BCR
+BUILD_BCR := true
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8a
